@@ -13,14 +13,16 @@
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
+    "fs": "0.0.1-security",
     "helmet": "^3.10.0",
     "loopback": "^3.19.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^6.0.0",
     "loopback-connector-mysql": "^5.2.0",
-    "loopback-connector-oracle": "^3.2.0",
+    "mkdirp": "^0.5.1",
     "serve-favicon": "^2.0.1",
-    "strong-error-handler": "^2.0.0"
+    "strong-error-handler": "^2.0.0",
+    "util": "^0.10.4"
   },
   "devDependencies": {
     "eslint": "^3.17.1",
