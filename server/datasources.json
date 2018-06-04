@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysqldb": {
+    "host": "111.230.18.197",
+    "port": 3306,
+    "database": "lvpeng_db",
+    "username": "lvpeng",
+    "password": "Lvpeng@1234",
+    "name": "mysqldb",
+    "connector": "mysql"
+  }
+}

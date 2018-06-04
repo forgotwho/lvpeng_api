@@ -1,0 +1,71 @@
+{
+  "name": "t_coupon",
+  "plural": "coupon",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "money": {
+      "type": "string",
+      "required": true
+    },
+    "num": {
+      "type": "string",
+      "required": true
+    },
+    "publish_num": {
+      "type": "string",
+      "required": true
+    },
+    "publish_time": {
+      "type": "string",
+      "required": true
+    },
+    "deadline_time": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "useful_type": {
+      "type": "string",
+      "required": true
+    },
+    "seller_id": {
+      "type": "string",
+      "required": true
+    },
+    "uniacid": {
+      "type": "string",
+      "required": true
+    },
+    "create_time": {
+      "type": "string",
+      "required": true
+    },
+    "update_time": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,79 @@
+{
+  "name": "t_goods",
+  "plural": "goods",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "pic_url": {
+      "type": "string",
+      "required": true
+    },
+    "goods_name": {
+      "type": "string",
+      "required": true
+    },
+    "sales": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "packing_fee": {
+      "type": "string",
+      "required": true
+    },
+    "num": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "has_standard": {
+      "type": "string",
+      "required": true
+    },
+    "seller_id": {
+      "type": "string",
+      "required": true
+    },
+    "catalog_id": {
+      "type": "string",
+      "required": true
+    },
+    "tags": {
+      "type": "string",
+      "required": true
+    },
+    "priority": {
+      "type": "string",
+      "required": true
+    },
+    "uniacid": {
+      "type": "string",
+      "required": true
+    },
+    "create_time": {
+      "type": "string",
+      "required": true
+    },
+    "update_time": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
