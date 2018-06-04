@@ -1,10 +1,10 @@
 {
-  "name": "t_coupon",
+  "name": "goods",
   "options": {
     "idInjection": false,
     "mysql": {
       "schema": "lvpeng_db",
-      "table": "t_coupon"
+      "table": "t_goods"
     },
     "relations": {}
   },
@@ -25,14 +25,29 @@
         "nullable": "N"
       }
     },
-    "name": {
+    "picUrl": {
+      "type": "String",
+      "required": true,
+      "length": 200,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "pic_url",
+        "dataType": "varchar",
+        "dataLength": 200,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "goodsName": {
       "type": "String",
       "required": true,
       "length": 100,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "name",
+        "columnName": "goods_name",
         "dataType": "varchar",
         "dataLength": 100,
         "dataPrecision": null,
@@ -40,29 +55,44 @@
         "nullable": "N"
       }
     },
-    "code": {
-      "type": "String",
+    "sales": {
+      "type": "Number",
       "required": true,
-      "length": 100,
-      "precision": null,
-      "scale": null,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
       "mysql": {
-        "columnName": "code",
-        "dataType": "varchar",
-        "dataLength": 100,
-        "dataPrecision": null,
-        "dataScale": null,
+        "columnName": "sales",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
         "nullable": "N"
       }
     },
-    "money": {
+    "price": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": 10,
       "scale": 2,
       "mysql": {
-        "columnName": "money",
+        "columnName": "price",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 2,
+        "nullable": "N"
+      }
+    },
+    "packingFee": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 2,
+      "mysql": {
+        "columnName": "packing_fee",
         "dataType": "decimal",
         "dataLength": null,
         "dataPrecision": 10,
@@ -85,79 +115,34 @@
         "nullable": "N"
       }
     },
-    "publishNum": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "publish_num",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "N"
-      }
-    },
-    "publishTime": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "publish_time",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "N"
-      }
-    },
-    "deadlineTime": {
+    "status": {
       "type": "String",
       "required": true,
-      "length": 100,
+      "length": 10,
       "precision": null,
       "scale": null,
-      "mysql": {
-        "columnName": "deadline_time",
-        "dataType": "varchar",
-        "dataLength": 100,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
-      }
-    },
-    "status": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
       "mysql": {
         "columnName": "status",
+        "dataType": "varchar",
+        "dataLength": 10,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "hasStandard": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "has_standard",
         "dataType": "int",
         "dataLength": null,
         "dataPrecision": 10,
         "dataScale": 0,
         "nullable": "N"
-      }
-    },
-    "usefulType": {
-      "type": "String",
-      "required": false,
-      "length": 100,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "useful_type",
-        "dataType": "varchar",
-        "dataLength": 100,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
       }
     },
     "sellerId": {
@@ -168,6 +153,36 @@
       "scale": null,
       "mysql": {
         "columnName": "seller_id",
+        "dataType": "varchar",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "catalogId": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "catalog_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "tags": {
+      "type": "String",
+      "required": true,
+      "length": 100,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "tags",
         "dataType": "varchar",
         "dataLength": 100,
         "dataPrecision": null,
@@ -236,5 +251,5 @@
       }
     }
   },
-  "plural": "coupon"
+  "plural": "goods"
 }

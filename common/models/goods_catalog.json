@@ -1,10 +1,10 @@
 {
-  "name": "t_catalog",
+  "name": "goods_catalog",
   "options": {
     "idInjection": false,
     "mysql": {
       "schema": "lvpeng_db",
-      "table": "t_catalog"
+      "table": "t_goods_catalog"
     },
     "relations": {}
   },
@@ -25,14 +25,14 @@
         "nullable": "N"
       }
     },
-    "title": {
+    "sellerId": {
       "type": "String",
       "required": true,
       "length": 100,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "title",
+        "columnName": "seller_id",
         "dataType": "varchar",
         "dataLength": 100,
         "dataPrecision": null,
@@ -40,14 +40,14 @@
         "nullable": "N"
       }
     },
-    "icon": {
+    "menuName": {
       "type": "String",
       "required": true,
       "length": 100,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "icon",
+        "columnName": "menu_name",
         "dataType": "varchar",
         "dataLength": 100,
         "dataPrecision": null,
@@ -146,5 +146,5 @@
       }
     }
   },
-  "plural": "catalog"
+  "plural": "goods_catalog"
 }

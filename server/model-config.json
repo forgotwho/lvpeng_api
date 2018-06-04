@@ -35,11 +35,55 @@
     "dataSource": "db",
     "public": false
   },
-  "t_catalog": {
+  "catalog": {
     "dataSource": "mysqldb",
     "public": true
   },
-  "t_coupon": {
+  "goods": {
+    "dataSource": "mysqldb",
+    "public": true
+  },
+  "goods_catalog": {
+    "dataSource": "mysqldb",
+    "public": true
+  },
+  "goods_sub": {
+    "dataSource": "mysqldb",
+    "public": true
+  },
+  "order": {
+    "dataSource": "mysqldb",
+    "public": true
+  },
+  "order_flow": {
+    "dataSource": "mysqldb",
+    "public": true
+  },
+  "order_review": {
+    "dataSource": "mysqldb",
+    "public": true
+  },
+  "shop": {
+    "dataSource": "mysqldb",
+    "public": true
+  },
+  "shop_promotion": {
+    "dataSource": "mysqldb",
+    "public": true
+  },
+  "coupon": {
+    "dataSource": "mysqldb",
+    "public": true
+  },
+  "user_address": {
+    "dataSource": "mysqldb",
+    "public": true
+  },
+  "user_coupon": {
+    "dataSource": "mysqldb",
+    "public": true
+  },
+  "user_info": {
     "dataSource": "mysqldb",
     "public": true
   }
