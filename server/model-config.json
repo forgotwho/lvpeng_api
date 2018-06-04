@@ -42,49 +42,5 @@
   "t_coupon": {
     "dataSource": "mysqldb",
     "public": true
-  },
-  "t_goods": {
-    "dataSource": "mysqldb",
-    "public": true
-  },
-  "t_goods_catalog": {
-    "dataSource": "mysqldb",
-    "public": true
-  },
-  "t_goods_sub": {
-    "dataSource": "mysqldb",
-    "public": true
-  },
-  "t_order": {
-    "dataSource": "mysqldb",
-    "public": true
-  },
-  "t_order_flow": {
-    "dataSource": "mysqldb",
-    "public": true
-  },  
-  "t_order_review": {
-    "dataSource": "mysqldb",
-    "public": true
-  },
-  "t_shop": {
-    "dataSource": "mysqldb",
-    "public": true
-  },
-  "t_shop_promotion": {
-    "dataSource": "mysqldb",
-    "public": true
-  },
-  "t_user_info": {
-    "dataSource": "mysqldb",
-    "public": true
-  },
-  "t_user_address": {
-    "dataSource": "mysqldb",
-    "public": true
-  },
-  "t_user_coupon": {
-    "dataSource": "mysqldb",
-    "public": true
   }
 }

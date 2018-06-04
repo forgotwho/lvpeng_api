@@ -24,25 +24,27 @@ async function discover() {
 
   // Discover models and relations
   const catalogSchemas = await db.discoverSchemas('t_catalog', options);
+	const catalog = catalogSchemas['lvpeng_db.t_catalog'];
+	catalog.name = 't_catalog';
+	catalog.plural = 'catalog';
   const couponSchemas = await db.discoverSchemas('t_coupon', options);
+	const coupon = catalogSchemas['lvpeng_db.t_coupon'];
+	coupon.name = 't_coupon';
+	coupon.plural = 'coupon';
 
   // Create model definition files
   await mkdirp('common/models');
-  await writeFile(
-    'common/models/catalog.json',
-    JSON.stringify(catalogSchemas['t_catalog'], null, 2)
+  await writeFile('common/models/t_catalog.json',JSON.stringify(catalog, null, 2)
   );
-  await writeFile(
-    'common/models/coupon.json',
-    JSON.stringify(couponSchemas['t_coupon'], null, 2)
+  await writeFile('common/models/t_coupon.json',JSON.stringify(coupon, null, 2)
   );
 
   // Expose models via REST API
   const configJson = await readFile('server/model-config.json', 'utf-8');
   console.log('MODEL CONFIG', configJson);
   const config = JSON.parse(configJson);
-  config.Catalog = {dataSource: DATASOURCE_NAME, public: true};
-  config.Coupon = {dataSource: DATASOURCE_NAME, public: true};
+  config.t_catalog = {dataSource: DATASOURCE_NAME, public: true};
+  config.t_coupon = {dataSource: DATASOURCE_NAME, public: true};
   await writeFile(
     'server/model-config.json',
     JSON.stringify(config, null, 2)
